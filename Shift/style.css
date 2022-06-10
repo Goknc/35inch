@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+.img-comp-container {
+    position: relative;
+    height: 200px;
+}
+
+.img-comp-img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.img-comp-img img {
+    display: block;
+    vertical-align: middle;
+}
+
+.img-comp-slider {
+    position: absolute;
+    z-index: 9;
+    cursor: ew-resize;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    opacity: 0.7;
+    border-radius: 50%;
+}
+
+.img-comp-slider::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0d9";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.img-comp-slider::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0da";
+    display: inline-block;
+    padding-right: 3px;
+    vertical-align: middle;
+    font-weight: 900;
+    padding-right: 10px;
+    padding-top: 10px;
+}
